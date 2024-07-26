@@ -1,0 +1,11 @@
+#lista as imagens
+docker image ls
+#Construir Imagem Docker
+docker build -t zabot/leonnylimas .
+#executar a imagem criada
+docker container run -it -d -p 8000:8000 zabot/leonnylimas
+#lista os container docker em execução
+docker container ls
+#entrar dentro do container em execução
+docker exec -it (ID do container) /bin/bash
+$root node Whats.js
